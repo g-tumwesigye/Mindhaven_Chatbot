@@ -1,1 +1,28 @@
+# Ignore Python virtual environments
 mindhaven_env/
+Mindhaven_Chatbot/ 
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore notebooks metadata
+*.ipynb_checkpoints
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore frontend build + modules
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Ignore system/macOS files
+.DS_Store
+
+# Ignore log files
+*.log
+
