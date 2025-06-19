@@ -2,7 +2,7 @@
 
 **Domain-Specific Mental Health Assistant Built with T5 & FastAPI + React**
 
-MindHaven is an intelligent, domain-specific chatbot designed to support individuals seeking mental health guidance. It leverages a fine-tuned Transformer model (T5) and delivers responses through a seamless, user-friendly web interface. This project demonstrates the power of NLP in providing empathetic, accurate, and accessible mental health support.
+**MindHaven** is a domain-specific mental health chatbot designed to support individuals seeking mental health guidance. It leverages a fine-tuned Transformer model (T5) and delivers responses through a seamless, user-friendly web interface. This project demonstrates the power of NLP in providing supportive, empathetic responses to mental health queries and is fine-tuned on the [Mental Health Counseling Conversations dataset](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations).
 
 ---
 
@@ -15,7 +15,7 @@ MindHaven is an intelligent, domain-specific chatbot designed to support individ
 
 ---
 
-## 
+## Details
 
 - Built a chatbot tailored to the mental health domain
 - Fine-tuned a transformer model for generative Q&A
@@ -24,11 +24,20 @@ MindHaven is an intelligent, domain-specific chatbot designed to support individ
 
 ---
 
+## Tech Stack
+
+- **Backend**: FastAPI + TensorFlow (T5 fine-tuned model)
+- **Frontend**: React + Tailwind CSS + TypeScript
+- **Model**: `t5-small` (fine-tuned)
+- **Dataset**: [Mental Health Counseling Conversations](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations.
+
+  ---
+  
 ## Dataset
 
 - **Name**: `mindhaven_dataset.json`
 - **Format**: JSON lines file with `Context` and `Response` fields
-- **Source**: Hugging face (https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)
+- **Source**: Hugging face [Mental Health Counseling Conversations](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations.
 - **Preprocessing**:
   - Lowercasing and whitespace normalization
   - Removal of nulls and noise
@@ -36,7 +45,7 @@ MindHaven is an intelligent, domain-specific chatbot designed to support individ
 
 ---
 
-## ⚙Model Architecture & Training
+## Model Architecture & Training
 
 | Component         | Configuration                          |
 |------------------|----------------------------------------|
@@ -105,16 +114,11 @@ Returns:
 
 ## Deployment
 
-| Component | Platform | URL                                                                      |
-| --------- | -------- | ------------------------------------------------------------------------ |
-| Frontend  | Vercel   | [https://mindhaven-ui.vercel.app](https://mindhaven-ui.vercel.app)       |
-| Backend   | Render   | [https://mindhaven-api.onrender.com](https://mindhaven-api.onrender.com) |
-
-> The frontend is fully connected to the backend. All CORS settings are handled in FastAPI.
+The frontend is locally connected to the backend (FastAPI).
 
 ---
 
-## 🧠 How to Run Locally
+## How to Run Locally
 
 ### 1. Clone Repo
 
@@ -144,7 +148,7 @@ uvicorn app.main:app --reload
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 ```
 Mindhaven_Chatbot/
@@ -169,32 +173,29 @@ Mindhaven_Chatbot/
 
 ## 💬 Contributors
 
-* **Name**: \[Your Full Name]
-* **Email**: \[Your Email]
-* **Institution**: \[Your University or Organization]
-* **Role**: Lead Developer, UI Designer, Model Engineer
+* **Name**: \[Geofrey Tumwesigye]
+* **Email**: \[g.tumwesigy@alustudent.com]
+* **Institution**: \[African Leadership University]
+* **Role**: Software Engineering Student
 
 ---
 
-## 📌 Project Status
+## Project Status
 
-✅ Dataset cleaning
-✅ T5 model fine-tuned
-✅ FastAPI backend
-✅ React UI
-✅ Connected + Deployed
-✅ BLEU & F1 metrics
-✅ Report + Demo Ready
+- Dataset cleaning
+- T5 model fine-tuned
+- FastAPI backend
+- React UI
+- BLEU & F1 metrics
+- Report & Video Demo 
 
 ---
 
-## 📄 License
+## Author
 
-This project is open-source under the MIT License.
+Geofrey Tumwesigye
 
 ```
 
 ---
 
-✅ **Next Step**: Let me know if you'd like the `demo script`, `submission packaging checklist`, or `PDF report styling`.
-```
