@@ -57,14 +57,14 @@
 | Learning Rate    | 0.001                                  |
 | Warmup Steps     | 200                                    |
 | Batch Size       | 8                                      |
-| Epochs           | 40                                     |
+| Epochs           | 50                                     |
 | Tokenizer        | T5Tokenizer                            |
-| Max Length       | 128 tokens                             |
+| Max Length       | 80 tokens                              |
 
 Model was trained using `TFT5ForConditionalGeneration` with early stopping and regularization techniques like:
-- `repetition_penalty = 1.8`
-- `no_repeat_ngram_size = 3`
-- `num_beams = 5`
+- `repetition_penalty = 1.5`
+- `no_repeat_ngram_size = 2`
+- `num_beams = 4`
 
 ---
 
@@ -73,7 +73,7 @@ Model was trained using `TFT5ForConditionalGeneration` with early stopping and r
 | Metric           | Score     |
 |------------------|-----------|
 | BLEU Score       | 0.0000    |
-| Token-level F1   | 0.1276    |
+| Token-level F1   | 0.1284    |
 
 **Note**: BLEU scores are often low for generative models in open-ended tasks. The F1-score reflects partial word overlap with reference answers.
 
@@ -83,9 +83,9 @@ Model was trained using `TFT5ForConditionalGeneration` with early stopping and r
 
 | Question                                           | Response (Generated) |
 |---------------------------------------------------|-----------------------|
-| I feel anxious and can't sleep at night. What do I do? | It’s a good idea to talk to a mental health counselor... |
-| I'm overwhelmed and can't focus.                  | Consider taking breaks and reaching out for support. |
-| I'm feeling lost and empty.                       | You are not alone. A therapist may help clarify your feelings. |
+| I feel anxious and can't sleep at night. What do I do? | It sounds like you are feeling anxious and unable to sleep at night. I would encourage you to seek out a mental health professional who can help you figure out what is going on in your life.|
+| I’m always overthinking and feel drained.                  | It sounds like you are experiencing a lot of anxiety and feeling drained. I would encourage you to seek out therapists in your area that can help you find the right fit for you. |
+| Lately, I’ve been feeling like I’m not good enough.                       | I am so sorry you are feeling this way. Mental health support can be a very difficult thing to do. It sounds like you have been experiencing some form of mental health issues that may be contributing to depression and anxiety. I would encourage you to seek out therapists in your area that can help you find the right fit for you.. |
 
 ---
 
@@ -117,7 +117,7 @@ Returns:
 
 ## Deployment
 
-The frontend is locally connected to the backend (FastAPI).
+The frontend is locally connected to the backend (FastAPI) as well as deployed on Render [(https://mindhaven-frontend.onrender.com/)]
 
 ---
 
@@ -155,26 +155,50 @@ uvicorn app.main:app --reload
 
 ```
 Mindhaven_Chatbot/
-├── app/
-│   ├── main.py
-│   └── model/
-│       └── mindhaven_t5_model_tf/
-├── requirements.txt
-├── README.md
-├── mindhaven_chatbot_UI/
+│
+├── README.md                        
+├── mindhaven-chatbot.ipynb         
+├── bfg.jar                          
+├── images/
+│   └── mindhaven_chatbot_image.png 
+│
+├── backend/                         
+│   ├── requirements.txt             
+│   ├── render.yaml                  
+│   └── app/
+│       ├── main.py                  
+│       └── README.md               
+│
+├── frontend/                        
+│   ├── index.html                   
+│   ├── package.json                 
+│   ├── tailwind.config.js          
+│   ├── tsconfig*.json              
+│   ├── vite.config.ts              
+│   ├── postcss.config.js           
 │   └── src/
-│       └── App.tsx, ChatWindow, hooks, services
+│       ├── App.tsx                 
+│       ├── main.tsx                
+│       ├── index.css               
+│       ├── hooks/
+│       │   └── useChat.ts          
+│       ├── components/             
+│       │   ├── ChatInput.tsx       
+│       │   ├── ChatWindow.tsx      
+│       │   └── MessageBubble.tsx   
+│       └── types/                  
+
 ```
 
 ---
 
-## 🎥 Demo Video
+## Demo Video
 
 > 🔗 [Click to Watch Demo Video (YouTube)](https://youtu.be/your-demo-link)
 
 ---
 
-## 💬 Contributors
+## Author
 
 * **Name**: \[Geofrey Tumwesigye]
 * **Email**: \[g.tumwesigy@alustudent.com]
@@ -183,22 +207,5 @@ Mindhaven_Chatbot/
 
 ---
 
-## Project Status
 
-- Dataset cleaning
-- T5 model fine-tuned
-- FastAPI backend
-- React UI
-- BLEU & F1 metrics
-- Report & Video Demo 
-
----
-
-## Author
-
-Geofrey Tumwesigye
-
-```
-
----
 
