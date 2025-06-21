@@ -194,16 +194,16 @@ Mindhaven_Chatbot/
 
 ## Demo Video
 
-> 🔗 [Click to Watch Demo Video (YouTube)](https://youtu.be/your-demo-link)
+>  [Click to Watch Demo Video (YouTube)](https://youtu.be/your-demo-link)
 
 ---
 
 ## Author
 
-* **Name**: \[Geofrey Tumwesigye]
-* **Email**: \[g.tumwesigy@alustudent.com]
-* **Institution**: \[African Leadership University]
-* **Role**: Software Engineering Student
+* **Name**: [Geofrey Tumwesigye]
+* **Email**: [g.tumwesigy@alustudent.com]
+* **[African Leadership University]**
+* **BSE Student**
 
 ---
 
