@@ -202,8 +202,11 @@ Mindhaven_Chatbot/
 ## Author
 
 Geofrey Tumwesigye
+
 **Email**: g.tumwesigy@alustudent.com
+
 **African Leadership University**
+
 **BSE Student**
 
 ---
