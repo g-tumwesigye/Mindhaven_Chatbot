@@ -201,10 +201,10 @@ Mindhaven_Chatbot/
 
 ## Author
 
-* **Name**: [Geofrey Tumwesigye]
-* **Email**: [g.tumwesigy@alustudent.com]
-* **[African Leadership University]**
-* **BSE Student**
+Geofrey Tumwesigye
+**Email**: g.tumwesigy@alustudent.com
+**African Leadership University**
+**BSE Student**
 
 ---
 
