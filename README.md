@@ -4,8 +4,9 @@
 
 **MindHaven** is a domain-specific mental health chatbot designed to support individuals seeking mental health guidance. It leverages a fine-tuned Transformer model (T5) and delivers responses through a seamless, user-friendly web interface. This project demonstrates the power of NLP in providing supportive, empathetic responses to mental health queries and is fine-tuned on the [Mental Health Counseling Conversations dataset](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations).
 
-**MindHaven_ChatBot_Screenshot**
+**MindHaven_ChatBot_Screenshots**
 ![Your Alt Text](images/mindhaven_chatbot_image.png)
+![Your Alt Text](images/mindhaven_chatbot_image_1.png)
 
 ---
 
